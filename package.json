@@ -1,0 +1,26 @@
+{
+  "name": "mappy",
+  "description": "Mappy the sheep",
+  "repository" : {
+     "type": "git",
+     "url": "http://github.com/tobiwild/mappy.git"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+      "googleapis": "*",
+      "node-schedule": "*",
+      "lodash": "*",
+      "mappy-commands": "git://github.com/tobiwild/mappy-commands",
+      "mappy-chat": "git://github.com/tobiwild/mappy-chat",
+      "mappy-jenkins": "git://github.com/tobiwild/mappy-jenkins"
+  },
+  "devDependencies": {
+      "grunt": "~0.4.2",
+      "grunt-mocha-cli": "~1.3.0",
+      "grunt-contrib-jshint": "~0.7.2",
+      "proxyquire": "*"
+  },
+  "version": "0.0.1"
+}
