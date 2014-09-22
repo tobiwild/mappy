@@ -11,7 +11,6 @@
   "dependencies": {
       "googleapis": "*",
       "node-schedule": "*",
-      "lodash": "*",
       "mappy-commands": "git://github.com/tobiwild/mappy-commands",
       "mappy-chat": "git://github.com/tobiwild/mappy-chat",
       "mappy-jenkins": "git://github.com/tobiwild/mappy-jenkins"

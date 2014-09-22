@@ -64,11 +64,11 @@ describe('GoogleCalendarScheduler', function() {
         googleCalendarScheduler.update();
         scheduler.runCallbacks();
         
-        assert.equal(calendarParams.timeMin, '2014-09-15T06:25:00.000Z');
-        assert.equal(calendarParams.timeMax, '2014-09-15T07:35:00.000Z');
+        assert.equal(calendarParams.timeMin, '2014-09-15T06:30:00.000Z');
+        assert.equal(calendarParams.timeMax, '2014-09-15T07:30:00.000Z');
 
         assert.equal(dates.length, 1);
-        var expectedDate = new Date(2014, 8, 15, 11, 40, 0);
+        var expectedDate = new Date(2014, 8, 15, 11, 10, 0);
         assert.equal(dates[0].toString(), expectedDate.toString());
     });
 
@@ -76,13 +76,13 @@ describe('GoogleCalendarScheduler', function() {
         events = [{
             'id':'foobar',
             'summary':'team moa stand-up  ',
-            'start':{'datetime':'2014-09-15t11:40:00+02:00'},
-            'end':{'datetime':'2014-09-15t11:55:00+02:00'}
+            'start':{'dateTime':'2014-09-15T11:40:00+02:00'},
+            'end':{'dateTime':'2014-09-15T11:55:00+02:00'}
         },{
             'id':'foobar2',
             'summary':'team moa stand-up  ',
-            'start':{'datetime':'2014-09-15t11:40:00+02:00'},
-            'end':{'datetime':'2014-09-15t11:55:00+02:00'}
+            'start':{'dateTime':'2014-09-15T11:40:00+02:00'},
+            'end':{'dateTime':'2014-09-15T11:55:00+02:00'}
         }];
 
         googleCalendarScheduler.update();
