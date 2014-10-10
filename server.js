@@ -5,7 +5,7 @@ var commands = require('mappy-commands');
 var mappyChat = require('mappy-chat');
 var mappyJenkins = require('mappy-jenkins');
 var mappyCalendar = require('./lib/mappy_calendar');
-
+var mappyJira = require('./lib/mappy_jira');
 
 function run(controller, config) {
     try {
@@ -14,6 +14,10 @@ function run(controller, config) {
         console.error(e);
     }
 }
+
+fs.readFile('./config/jira.json', function(err, data) {
+    run(mappyJira, JSON.parse(data));
+});
 
 fs.readFile('./config/calendar.json', function(err, data) {
     run(mappyCalendar, JSON.parse(data));
