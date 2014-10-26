@@ -46,8 +46,9 @@ describe('ItemEventEmitter', function() {
         eventEmitter.on('gone', callback);
 
         eventEmitter.update(items);
-        eventEmitter.update([]);
+        sinon.assert.notCalled(callback);
 
+        eventEmitter.update([]);
         sinon.assert.calledOnce(callback);
         sinon.assert.calledWith(callback, items[0]);
     });
@@ -63,12 +64,12 @@ describe('ItemEventEmitter', function() {
         eventEmitter.update(items);
         sinon.assert.notCalled(callback);
 
-        clock.tick(100 * 1000);
+        clock.tick(100 * 1000 - 1);
+        eventEmitter.update(items);
         sinon.assert.notCalled(callback);
 
+        clock.tick(1);
         eventEmitter.update(items);
-        eventEmitter.update(items);
-
         sinon.assert.calledOnce(callback);
         sinon.assert.calledWith(callback, items[0]);
     });
@@ -113,5 +114,25 @@ describe('ItemEventEmitter', function() {
         ]);
 
         sinon.assert.calledWith(callback, items[0]);
+    });
+
+    it('emits change event when something changes after update call', function() {
+        var callback = sinon.spy();
+        eventEmitter.on('change', callback);
+
+        eventEmitter.update([]);
+        sinon.assert.notCalled(callback);
+
+        eventEmitter.update([
+            { id: 'item1' },
+            { id: 'item2' }
+        ]);
+        sinon.assert.calledOnce(callback);
+
+        eventEmitter.update([]);
+        sinon.assert.calledTwice(callback);
+
+        eventEmitter.update([]);
+        sinon.assert.calledTwice(callback);
     });
 });

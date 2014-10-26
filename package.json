@@ -10,9 +10,10 @@
   },
   "dependencies": {
     "googleapis": "^1.0.16",
+    "jenkins": "0.2.1",
+    "lodash": "^2.4.1",
     "mappy-chat": "git://github.com/tobiwild/mappy-chat",
     "mappy-commands": "git://github.com/tobiwild/mappy-commands",
-    "mappy-jenkins": "git://github.com/tobiwild/mappy-jenkins",
     "node-schedule": "^0.1.13",
     "q": "^1.0.1",
     "request": "^2.45.0"

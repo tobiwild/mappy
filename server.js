@@ -2,8 +2,9 @@
 
 var fs = require('fs');
 var commands = require('mappy-commands');
+
 var mappyChat = require('mappy-chat');
-var mappyJenkins = require('mappy-jenkins');
+var mappyJenkins = require('./lib/jenkins/controller');
 var mappyCalendar = require('./lib/mappy_calendar');
 var mappyJira = require('./lib/mappy_jira');
 
