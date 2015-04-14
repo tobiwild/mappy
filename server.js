@@ -7,6 +7,7 @@ var mappyChat = require('mappy-chat');
 var mappyJenkins = require('./lib/jenkins/controller');
 var mappyCalendar = require('./lib/mappy_calendar');
 var mappyJira = require('./lib/mappy_jira');
+var mappyMotion = require('./lib/mappy_motion');
 
 function run(controller, config) {
     try {
@@ -30,4 +31,8 @@ fs.readFile('./config/chat.json', function(err, data) {
 
 fs.readFile('./config/jenkins.json', function(err, data) {
     run(mappyJenkins, JSON.parse(data));
+});
+
+fs.readFile('./config/motion.json', function(err, data) {
+    run(mappyMotion, JSON.parse(data));
 });
