@@ -11,20 +11,23 @@
   "dependencies": {
     "googleapis": "^1.0.16",
     "jenkins": "0.2.1",
-    "lodash": "^2.4.1",
+    "l8smartlight": "git://github.com/jakobwesthoff/node-l8smartlight#8af6a97bb5f2944293b9f53784df6a13f0f75535",
+    "lodash": "^3.10.1",
     "mappy-chat": "git://github.com/tobiwild/mappy-chat",
     "mappy-commands": "git://github.com/tobiwild/mappy-commands",
     "node-schedule": "^0.1.13",
-    "q": "^1.0.1",
-    "request": "^2.45.0",
-    "serialport": "^1.6.3"
+    "q": "^1.4.1",
+    "request": "^2.61.0",
+    "serialport": "^1.6.3",
+    "xml2js": "^0.4.10"
   },
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-mocha-cli": "~1.3.0",
     "grunt-contrib-jshint": "~0.7.2",
-    "proxyquire": "*",
-    "sinon": "^1.16.1"
+    "sinon": "^1.16.1",
+    "proxyquire": "^1.7.2",
+    "chai": "^3.2.0"
   },
   "version": "0.0.1"
 }
