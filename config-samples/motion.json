@@ -1,0 +1,15 @@
+{
+    "devicePath": "/dev/ttyACM0",
+    "audioFiles": [
+        "cat.mp3",
+        "cough.wav",
+        "dog_bark.wav",
+        "fart1.mp3",
+        "fart2.mp3",
+        "laugh.wav",
+        "oohooh.wav",
+        "sneeze.mp3",
+        "yawn.wav"
+    ],
+    "eventChance": 0.1
+}

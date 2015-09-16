@@ -1,0 +1,96 @@
+{
+    "jabber": {
+        "client": {
+            "jid": "anemone@localhost",
+            "password": "bibo"
+        },
+        "rooms": [
+            "room1@conference.localhost",
+            "room2@conference.localhost"
+        ],
+        "roomAlias": "Mappy"
+    },
+    "greetings": [
+        "Guten Morgen {forname}, schön, dass du wieder da bist",
+        "Gibts ja net, da ist ja mein Lieblingskollege Herr {surname}, hallo",
+        "Einen wunder, wunder, wunderschönen guten Morgen lieber {forname}",
+        "Geil, geil, geil, da ist der {surname}. Einen schönen Arbeitstag mein Lieber",
+        "Meine Damen und Herren, darf ich vorstellen: der einzigartige {forname} {surname}"
+    ],
+    "rules": [
+        {
+            "conditions": {
+                "text": {
+                    "regex": "^list$",
+                    "modifier": "i"
+                }
+            },
+            "message": {
+                "command": "ListAudioFilesCommand"
+            }
+        },
+        {
+            "conditions": {
+                "text": {
+                    "regex": "^killall$",
+                    "modifier": "i"
+                }
+            },
+            "message": {
+                "command": "KillProcessesCommand"
+            }
+        },
+        {
+            "conditions": {
+                "text": {
+                    "regex": "^play (.+)",
+                    "modifier": "i"
+                }
+            },
+            "message": {
+                "command": "PlayAudioFileCommand",
+                "file": "{text1}"
+            }
+        },
+        {
+            "conditions": {
+                "text": {
+                    "regex": "^target (.+)",
+                    "modifier": ""
+                }
+            },
+            "message": {
+                "command": "RocketLauncherCommand",
+                "target": "{text1}"
+            }
+        },
+        {
+            "conditions": {
+                "text": {
+                    "regex": "^rl (.+)",
+                    "modifier": ""
+                }
+            },
+            "message": {
+                "command": "RocketLauncherCommand",
+                "commands": "{text1}"
+            }
+        },
+        {
+            "conditions": {
+                "text": {
+                    "regex":"^!([a-z]{2}) (.*)",
+                    "modifier":""
+                }
+            },
+            "message": {
+                "command": "TextToSpeechCommand",
+                "text": "{user} sagt: {text2}",
+                "language": "{text1}",
+                "speed":"1.0",
+                "tempo":"1.0",
+                "pitch":"0"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "account": {
+        "email": "YOUR GOOGLE SERVICE ACCOUNT",
+        "keyFile": "./key.pem"
+    },
+    "options": {
+        "calendarId": "YOUR CALENDAR ID",
+        "debug": true
+    },
+    "eventAudioFile": "sheep1.mp3"
+}

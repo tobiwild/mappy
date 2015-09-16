@@ -1,0 +1,12 @@
+{
+    "interval": 2000,
+    "l8": {
+        "device": "/dev/ttyACM0"
+    },
+    "jenkins": {
+        "uri": "http://localhost:8080",
+        "jobs": [
+            "job1"
+        ]
+    }
+}

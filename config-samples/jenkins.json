@@ -1,0 +1,26 @@
+{
+    "interval": 30000,
+    "requestDefaults": {
+        "rejectUnauthorized": false
+    },
+    "url": "https://username:password@jenkins-host.lan",
+    "jobs": [
+        "^Job-Name-Regex1$",
+        "^Job-Name-Regex2$"
+    ],
+    "usbDevices": {
+        "failing": {
+            "id": "05e3:0608",
+            "port": 4
+        },
+        "building": {
+            "id": "05e3:0608",
+            "port": 3
+        }
+    },
+    "textToSpeechDefaults": {
+        "language": "de",
+        "pitch": 400
+    },
+    "eventAudioFile": "sheep1.mp3"
+}

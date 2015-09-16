@@ -1,0 +1,9 @@
+{
+    "modules": [
+        "smartlight",
+        "calendar",
+        "motion",
+        "chat",
+        "jenkins"
+    ]
+}
