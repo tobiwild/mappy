@@ -1,38 +1,11 @@
 'use strict';
 
-var fs = require('fs');
-var commands = require('mappy-commands');
+var util = require('util');
 
-var mappyChat = require('mappy-chat');
-var mappyJenkins = require('./lib/jenkins/controller');
-var mappyCalendar = require('./lib/mappy_calendar');
-var mappyJira = require('./lib/mappy_jira');
-var mappyMotion = require('./lib/mappy_motion');
+var config = require('app/config/global.json');
 
-function run(controller, config) {
-    try {
-        controller.run(config, commands);
-    } catch(e) {
-        console.error(e);
-    }
-}
-
-fs.readFile('./config/jira.json', function(err, data) {
-    run(mappyJira, JSON.parse(data));
-});
-
-fs.readFile('./config/calendar.json', function(err, data) {
-    run(mappyCalendar, JSON.parse(data));
-});
-
-fs.readFile('./config/chat.json', function(err, data) {
-    run(mappyChat, JSON.parse(data));
-});
-
-fs.readFile('./config/jenkins.json', function(err, data) {
-    run(mappyJenkins, JSON.parse(data));
-});
-
-fs.readFile('./config/motion.json', function(err, data) {
-    run(mappyMotion, JSON.parse(data));
+config.modules.forEach(function(module) {
+    console.log('load module %s', module);
+    require(util.format('./lib/modules/%s/controller', module))
+        .run();
 });

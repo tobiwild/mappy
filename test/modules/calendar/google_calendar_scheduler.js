@@ -37,7 +37,7 @@ describe('GoogleCalendarScheduler', function() {
             }
         };
 
-        var GoogleCalendarScheduler = proxyquire('../lib/google_calendar_scheduler', {
+        var GoogleCalendarScheduler = proxyquire('app/modules/calendar/google_calendar_scheduler', {
             'node-schedule': scheduler
         });
 

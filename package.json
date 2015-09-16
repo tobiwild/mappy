@@ -23,7 +23,8 @@
     "grunt": "~0.4.2",
     "grunt-mocha-cli": "~1.3.0",
     "grunt-contrib-jshint": "~0.7.2",
-    "proxyquire": "*"
+    "proxyquire": "*",
+    "sinon": "^1.16.1"
   },
   "version": "0.0.1"
 }

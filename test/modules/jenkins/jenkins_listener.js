@@ -3,7 +3,7 @@
 var sinon = require('sinon');
 var _ = require('lodash');
 
-var JenkinsListener = require('../../lib/jenkins/jenkins_listener');
+var JenkinsListener = require('app/modules/jenkins/jenkins_listener');
 
 describe('JenkinsListener', function() {
 

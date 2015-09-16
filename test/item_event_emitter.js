@@ -2,7 +2,7 @@
 
 var sinon = require('sinon');
 
-var ItemEventEmitter = require('../lib/item_event_emitter');
+var ItemEventEmitter = require('app/item_event_emitter');
 
 describe('ItemEventEmitter', function() {
 
