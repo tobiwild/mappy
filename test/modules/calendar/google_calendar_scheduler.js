@@ -45,7 +45,7 @@ describe('GoogleCalendarScheduler', function() {
             interval: 3600,
             notifyBefore: 1800
         });
-        googleCalendarScheduler.startDate = new Date(2014, 8, 15, 8, 0, 0);
+        googleCalendarScheduler.startDate = new Date('2014-09-15T08:00:00+02:00');
     });
 
     it('should notify on start date', function(done) {
@@ -68,7 +68,7 @@ describe('GoogleCalendarScheduler', function() {
         assert.equal(calendarParams.timeMax, '2014-09-15T07:30:00.000Z');
 
         assert.equal(dates.length, 1);
-        var expectedDate = new Date(2014, 8, 15, 11, 10, 0);
+        var expectedDate = new Date('2014-09-15T11:10:00+02:00');
         assert.equal(dates[0].toString(), expectedDate.toString());
     });
 

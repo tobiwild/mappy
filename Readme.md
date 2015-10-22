@@ -1,5 +1,4 @@
-Mappy
-=====
+# Mappy [![Build Status](https://travis-ci.org/tobiwild/mappy.svg?branch=master)](https://travis-ci.org/tobiwild/mappy)
 
 The sheep for your office
 

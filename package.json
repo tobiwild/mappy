@@ -6,7 +6,8 @@
     "url": "http://github.com/tobiwild/mappy.git"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "grunt test"
   },
   "dependencies": {
     "googleapis": "^1.0.16",
