@@ -10,6 +10,8 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
     "googleapis": "^1.0.16",
     "jenkins": "0.2.1",
     "l8smartlight": "git://github.com/jakobwesthoff/node-l8smartlight#8af6a97bb5f2944293b9f53784df6a13f0f75535",
