@@ -123,5 +123,19 @@ describe('GoogleCalendarScheduler', function() {
         assert.equal(dates.length, 2);
     });
 
+    it('should not schedule events without timeDate attributes', function() {
+        events = [{
+            'id':'foobar',
+            'summary':'Team Moa Stand-Up  ',
+            'start': { 'date': '2016-01-24' },
+            'end': { 'date': '2016-01-25' }
+        }];
+
+        googleCalendarScheduler.update();
+        scheduler.runCallbacks();
+
+        assert.equal(dates.length, 0);
+    });
+
 
 });
