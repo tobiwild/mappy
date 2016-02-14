@@ -1,4 +1,8 @@
-# Mappy [![Build Status](https://travis-ci.org/tobiwild/mappy.svg?branch=master)](https://travis-ci.org/tobiwild/mappy)
+# Mappy
+
+[![Build Status](https://travis-ci.org/tobiwild/mappy.svg?branch=master)](https://travis-ci.org/tobiwild/mappy)
+[![Dependency Status](https://david-dm.org/tobiwild/mappy.svg)](https://david-dm.org/tobiwild/mappy)
+[![devDependency Status](https://david-dm.org/tobiwild/mappy/dev-status.svg)](https://david-dm.org/tobiwild/mappy#info=devDependencies)
 
 The sheep for your office
 

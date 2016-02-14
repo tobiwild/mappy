@@ -2,7 +2,6 @@
     "camelcase": true,
     "eqeqeq": true,
     "eqnull": true,
-    "globalstrict": true,
     "immed": true,
     "indent": 4,
     "latedef": "nofunc",
@@ -19,7 +18,7 @@
     "quotmark": "single",
     "undef": true,
     "unused": true,
-    "strict": true,
+    "strict": "global",
     "trailing": true,
 
     "node": true,
