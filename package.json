@@ -14,7 +14,7 @@
     "express": "^4.13.4",
     "googleapis": "^2.1.7",
     "jenkins": "0.2.1",
-    "l8smartlight": "git://github.com/tobiwild/node-l8smartlight#cff22c3efcc4797fc5fc33bcb27cd6a552125f97",
+    "l8smartlight": "git://github.com/tobiwild/node-l8smartlight#a50f4bd3d4d7eea05cd85529a78942828bc54bd1",
     "lodash": "^4.3.0",
     "mappy-chat": "git://github.com/tobiwild/mappy-chat",
     "mappy-commands": "git://github.com/tobiwild/mappy-commands",
