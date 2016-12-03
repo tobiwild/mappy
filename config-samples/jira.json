@@ -1,0 +1,14 @@
+{
+    "interval": 60,
+    "usbDevice": {
+        "id": "05e3:0608",
+        "port": 2
+    },
+    "url": "http://jira.lan",
+    "username": "user",
+    "password": "pass",
+    "audio": {
+        "new": "blocker.mp3"
+    },
+    "jql": "filter=13645"
+}

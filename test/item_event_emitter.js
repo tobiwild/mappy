@@ -37,6 +37,17 @@ describe('ItemEventEmitter', function() {
         sinon.assert.calledWith(callback, items[0]);
     });
 
+    it('should notify about first item', function() {
+        var callback = sinon.spy();
+        eventEmitter.on('first', callback);
+
+        eventEmitter.update([{ id: 'item1' }]);
+        sinon.assert.calledOnce(callback);
+
+        eventEmitter.update([{ id: 'item2' }]);
+        sinon.assert.calledOnce(callback);
+    });
+
     it('should notify about items which are gone', function() {
         var items = [{
             id: 'item1'
@@ -73,8 +84,8 @@ describe('ItemEventEmitter', function() {
         sinon.assert.calledOnce(callback);
         sinon.assert.calledWith(callback, items[0]);
     });
-    
-    it('should notify when item list gets empty', function() {
+
+    it('should notify when item are gone', function() {
         var callback = sinon.spy();
         eventEmitter.on('allGone', callback);
 
@@ -96,12 +107,36 @@ describe('ItemEventEmitter', function() {
         sinon.assert.calledOnce(callback);
     });
 
+    it('should notify when item list is empty', function() {
+        var callback = sinon.spy();
+        eventEmitter.on('empty', callback);
+
+        eventEmitter.update([]);
+        eventEmitter.update([]);
+        sinon.assert.calledOnce(callback);
+
+        eventEmitter.update([
+            { id: 'item1' },
+            { id: 'item2' }
+        ]);
+        sinon.assert.calledOnce(callback);
+
+        eventEmitter.update([
+            { id: 'item2' }
+        ]);
+        sinon.assert.calledOnce(callback);
+
+        eventEmitter.update([]);
+        sinon.assert.calledTwice(callback);
+    });
+
+
     it('should identify items by checksum when no id function is specified', function() {
         var eventEmitter = new ItemEventEmitter();
 
         var callback = sinon.spy();
         eventEmitter.on('gone', callback);
-        
+
         var items = [
             { id: 'item1' },
             { id: 'item2' }

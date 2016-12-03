@@ -7,10 +7,11 @@
   },
   "scripts": {
     "start": "node server.js",
-    "test": "grunt test"
+    "test": "./node_modules/.bin/grunt test"
   },
   "dependencies": {
     "body-parser": "^1.15.0",
+    "debug": "^2.3.3",
     "express": "^4.13.4",
     "googleapis": "^2.1.7",
     "jenkins": "0.2.1",
@@ -25,12 +26,13 @@
     "xml2js": "^0.4.10"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-mocha-cli": "^2.0.0",
-    "grunt-contrib-jshint": "^0.12.0",
-    "sinon": "^1.16.1",
+    "chai": "^3.2.0",
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-eslint": "^19.0.0",
+    "grunt-mocha-cli": "^3.0.0",
     "proxyquire": "^1.7.2",
-    "chai": "^3.2.0"
+    "sinon": "^1.16.1"
   },
   "version": "0.0.1"
 }

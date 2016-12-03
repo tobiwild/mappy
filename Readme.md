@@ -10,9 +10,14 @@ The sheep for your office
 
 Mappy consists of several modules which can be enabled in `lib/config/global.json`
 
-### Jenkins
+### CI
 
-With the Jenkins module, you can setup Mappy to notify about build failures. Mappy notifies about:
+With the CI module, you can setup Mappy to notify about build failures. At moment the following provider are supported:
+
+* Jenkins
+* Gitlab
+
+Mappy notifies about:
 
 * the time a job enters fail state
 * the time a job gets fixed
