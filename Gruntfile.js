@@ -4,11 +4,8 @@ module.exports = function(grunt) {
 
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
-        jshint: {
-            allFiles: ['*.js', 'lib/**/*.js', 'test/**/*.js'],
-            options: {
-                jshintrc: '.jshintrc',
-            }
+        eslint: {
+            target: ['*.js', 'lib/**/*.js', 'test/**/*.js'],
         },
         mochacli: {
             all: ['test/**/*.js'],
@@ -20,10 +17,10 @@ module.exports = function(grunt) {
     });
 
     // Load the plugins
-    grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-mocha-cli');
+    grunt.loadNpmTasks('grunt-eslint');
 
     // Configure tasks
     grunt.registerTask('default', ['test']);
-    grunt.registerTask('test', ['mochacli', 'jshint']);
+    grunt.registerTask('test', ['mochacli', 'eslint']);
 };

@@ -6,10 +6,10 @@ var ProgressMatrix = require('app/modules/smartlight/progress_matrix');
 describe('ProgressMatrix', function() {
 
     var progressMatrix,
-    c1 = {r: 15, g: 0, b: 0},
-    c2 = {r: 0, g: 15, b: 0},
-    c3 = {r: 0, g: 0, b: 15},
-    bg = {r: 0, g: 0, b: 0};
+        c1 = {r: 15, g: 0, b: 0},
+        c2 = {r: 0, g: 15, b: 0},
+        c3 = {r: 0, g: 0, b: 15},
+        bg = {r: 0, g: 0, b: 0};
 
     beforeEach(function() {
         progressMatrix = new ProgressMatrix({

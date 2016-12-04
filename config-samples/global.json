@@ -4,6 +4,6 @@
         "calendar",
         "motion",
         "chat",
-        "jenkins"
+        "ci"
     ]
 }

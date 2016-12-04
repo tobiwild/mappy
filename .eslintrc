@@ -1,0 +1,72 @@
+{
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "globals": {
+  },
+  "rules": {
+    "camelcase": 2,
+    "eqeqeq": 2,
+    "semi": 2,
+    "no-eq-null": 2,
+    "wrap-iife": [
+      2,
+      "any"
+    ],
+    "indent": [
+      2,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "no-use-before-define": [
+      2,
+      {
+        "functions": false
+      }
+    ],
+    "comma-style": [
+      2,
+      "last"
+    ],
+    "max-params": [
+      2,
+      4
+    ],
+    "max-depth": [
+      2,
+      3
+    ],
+    "max-statements": [
+      2,
+      20
+    ],
+    "complexity": [
+      2,
+      8
+    ],
+    "max-len": [
+      2,
+      {
+        "code": 120,
+        "ignoreComments": true
+      }
+    ],
+    "new-cap": 2,
+    "no-caller": 2,
+    "no-empty": 2,
+    "no-new": 2,
+    "quotes": [
+      2,
+      "single"
+    ],
+    "no-undef": 2,
+    "no-unused-vars": 2,
+    "strict": [
+      2,
+      "global"
+    ]
+  }
+}

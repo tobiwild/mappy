@@ -1,0 +1,38 @@
+{
+    "interval": 30000,
+    "provider": {
+        "jenkins": {
+            "url": "https://username:password@jenkins-host.lan",
+            "requestDefaults": {
+                "rejectUnauthorized": false
+            },
+            "jobs": [
+                "^Job-Name-Regex1$",
+                "^Job-Name-Regex2$"
+            ]
+        },
+        "gitlab": {
+            "url": "http://example.com",
+            "token": "abcdefghij123456",
+            "projects": [
+                "root/test"
+            ]
+        }
+    },
+    "usbDevices": {
+        "failed": {
+            "id": "05e3:0608",
+            "port": 4
+        }
+    },
+    "usbSwitch": {
+        "failed": 0,
+        "running": 1,
+        "success": 2
+    },
+    "textToSpeechDefaults": {
+        "language": "de",
+        "pitch": 400
+    },
+    "eventAudioFile": "sheep1.mp3"
+}
