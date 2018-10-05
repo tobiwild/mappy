@@ -10,6 +10,7 @@
     "test": "./node_modules/.bin/grunt test"
   },
   "dependencies": {
+    "@slack/client": "^4.8.0",
     "body-parser": "^1.15.0",
     "debug": "^2.3.3",
     "express": "^4.13.4",
@@ -17,7 +18,6 @@
     "jenkins": "0.2.1",
     "l8smartlight": "git://github.com/tobiwild/node-l8smartlight#a50f4bd3d4d7eea05cd85529a78942828bc54bd1",
     "lodash": "^4.3.0",
-    "mappy-chat": "git://github.com/tobiwild/mappy-chat",
     "mappy-commands": "git://github.com/tobiwild/mappy-commands",
     "node-schedule": "^1.0.0",
     "q": "^1.4.1",
