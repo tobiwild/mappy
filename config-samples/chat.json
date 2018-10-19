@@ -1,6 +1,7 @@
 {
     "slack": {
-        "apiToken": "xxx"
+        "apiToken": "xxx",
+        "hiddenAnswer": true
     },
     "rules": [
         {
