@@ -5,6 +5,9 @@
   },
   "globals": {
   },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
   "rules": {
     "camelcase": 2,
     "eqeqeq": 2,
