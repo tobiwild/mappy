@@ -1,6 +1,5 @@
 {
     "modules": [
-        "smartlight",
         "calendar",
         "motion",
         "chat",

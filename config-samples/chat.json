@@ -1,22 +1,7 @@
 {
-    "jabber": {
-        "client": {
-            "jid": "anemone@localhost",
-            "password": "bibo"
-        },
-        "rooms": [
-            "room1@conference.localhost",
-            "room2@conference.localhost"
-        ],
-        "roomAlias": "Mappy"
+    "slack": {
+        "apiToken": "xxx"
     },
-    "greetings": [
-        "Guten Morgen {forname}, schön, dass du wieder da bist",
-        "Gibts ja net, da ist ja mein Lieblingskollege Herr {surname}, hallo",
-        "Einen wunder, wunder, wunderschönen guten Morgen lieber {forname}",
-        "Geil, geil, geil, da ist der {surname}. Einen schönen Arbeitstag mein Lieber",
-        "Meine Damen und Herren, darf ich vorstellen: der einzigartige {forname} {surname}"
-    ],
     "rules": [
         {
             "conditions": {
