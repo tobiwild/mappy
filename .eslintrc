@@ -6,7 +6,7 @@
   "globals": {
   },
   "parserOptions": {
-    "ecmaVersion": 6
+    "ecmaVersion": 2017
   },
   "rules": {
     "camelcase": 2,
