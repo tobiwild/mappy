@@ -16,7 +16,9 @@ describe('GoogleCalendarScheduler', function() {
                 list: function(params, cb) {
                     calendarParams = params;
                     cb(null, {
-                        items: events
+                        data: {
+                            items: events
+                        }
                     });
                 }
             }
