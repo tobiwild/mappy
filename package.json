@@ -22,7 +22,7 @@
     "request": "^2.88.0",
     "serialport": "^7.0.2",
     "xml2js": "^0.4.19",
-    "l8smartlight": "https://github.com/tobiwild/node-l8smartlight#a50f4bd3d4d7eea05cd85529a78942828bc54bd1",
+    "l8smartlight": "https://github.com/tobiwild/node-l8smartlight",
     "mappy-commands": "https://github.com/tobiwild/mappy-commands"
   },
   "devDependencies": {
