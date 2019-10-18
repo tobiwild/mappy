@@ -1,7 +1,8 @@
 {
-    "account": {
-        "email": "YOUR GOOGLE SERVICE ACCOUNT",
-        "keyFile": "./key.pem"
+    "oauth": {
+        "clientId": "CLIENT_ID",
+        "clientSecret": "CLIENT_SECRET",
+        "refreshToken": "REFRESH_TOKEN"
     },
     "options": {
         "calendarId": "YOUR CALENDAR ID",
