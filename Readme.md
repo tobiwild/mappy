@@ -39,10 +39,6 @@ See https://github.com/tobiwild/mappy-chat
 
 Use some PIR motion sensor and play some random sounds when there's motion
 
-### Jenkins Smartlight
-
-Show progress bar of Jenkins builds on a [Smartlight device](http://l8smartlight.com/)
-
 ### Calendar
 
 With the Calendar module, you can setup Mappy to notify about Google calendar events

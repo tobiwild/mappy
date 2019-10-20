@@ -1,3 +1,2 @@
-node_modules/*
-!node_modules/app
-lib/config
+node_modules
+/lib/config

@@ -1,11 +1,10 @@
-'use strict';
+/* eslint "import/no-dynamic-require": 0 */
+/* eslint "global-require": 0 */
+const util = require('util');
 
-var util = require('util');
+const config = require('./lib/config/global.json');
 
-var config = require('app/config/global.json');
-
-config.modules.forEach(function(module) {
-    console.log('load module %s', module);
-    require(util.format('./lib/modules/%s/controller', module))
-        .run();
+config.modules.forEach(module => {
+  console.log('load module %s', module);
+  require(util.format('./lib/modules/%s/controller', module)).run();
 });
