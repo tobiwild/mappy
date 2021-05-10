@@ -17,7 +17,7 @@
     "express": "^4.16.4",
     "googleapis": "^44.0.0",
     "jenkins": "0.22.1",
-    "lodash": "^4.17.11",
+    "lodash": "^4.17.21",
     "mappy-commands": "git+https://github.com/tobiwild/mappy-commands.git",
     "node-schedule": "^1.3.0",
     "q": "^1.5.1",
